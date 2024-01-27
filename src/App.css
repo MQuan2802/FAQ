@@ -1,0 +1,109 @@
+/* @import url("./config.css"); */
+@import url("./component.css");
+@import url("./illustration.css");
+@import url("./faq.css");
+@import url("./attribution.css");
+@import url("./animation.css");
+@import url("./responsive.css");
+
+/* .App {
+  text-align: center;
+} */
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.faq__question-button::after {
+  transition: transform 300ms ease-out;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#abcdef, #012345);
+  color: #234567;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  color: #123456;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+button {
+  color: #333333;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+/* Remove the focus indicator on mouse-focus for browsers that do support :focus-visible */
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+button:focus-visible {
+  /* Draw a very noticeable focus style for
+     keyboard-focus on browsers that do support
+     :focus-visible */
+  outline: 2px dashed #ff9999;
+  outline-offset: 0px;
+}
+
+#root {
+  width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}

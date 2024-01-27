@@ -1,0 +1,57 @@
+@media only screen and (max-width: 800px) {
+    .illustration__woman-desktop {
+      max-width: 120%;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .container {
+      padding-top: 105px;
+    }
+  
+    .component {
+      max-width: 327px;
+      background-image: url(./images/bg-pattern-mobile.svg);
+      background-position: top;
+      flex-direction: column;
+    }
+  
+    .illustration__box {
+      display: none;
+    }
+  
+    .illustration__woman-desktop {
+      display: none;
+    }
+  
+    .illustration__woman-mobile {
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      top: -105px;
+      left: 12px;
+    }
+  
+    .faq {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      padding-top: 132px;
+      padding-bottom: 48px;
+    }
+  
+    .faq__question {
+      max-width: 279px;
+    }
+  
+    .faq__question-button {
+      width: 279px;
+      font-size: 13px;
+      line-height: 13px;
+    }
+  
+    .faq__question-button::after {
+      padding-right: 0px;
+    }
+  }

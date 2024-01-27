@@ -1,0 +1,22 @@
+.illustration {
+    width: 100%;
+    position: relative;
+  }
+  
+  .illustration__box {
+    position: absolute;
+    z-index: 999;
+    top: 200px;
+    left: -95px;
+  }
+  
+  .illustration__woman-desktop {
+    position: absolute;
+    top: 60px;
+    left: -77px;
+    clip-path: inset(0px 0px 0px 77px);
+  }
+  
+  .illustration__woman-mobile {
+    display: none;
+  }
